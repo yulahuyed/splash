@@ -29,9 +29,9 @@ ADD . /app
 RUN pip3 install /app
 ENV PYTHONPATH $PYTHONPATH:/app
 
-chmod -R 777 /etc/splash
+RUN chmod -R 777 /etc/splash
 
-RUN EXPOSE 8050 5023
+EXPOSE 8050 5023
 
 ENTRYPOINT [ \
     "python3", \
