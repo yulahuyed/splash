@@ -29,6 +29,10 @@ ADD . /app
 RUN pip3 install /app
 ENV PYTHONPATH $PYTHONPATH:/app
 
+RUN mkdir -p /etc/splash/proxy-profiles
+RUN mkdir -p /etc/splash/js-profiles
+RUN mkdir -p /etc/splash/filters
+RUN mkdir -p /etc/splash/lua_modules
 RUN chmod -R 777 /etc/splash
 
 EXPOSE 8050 5023
