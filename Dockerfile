@@ -31,7 +31,7 @@ ENV PYTHONPATH $PYTHONPATH:/app
 
 chmod -R 777 /etc/splash
 
-EXPOSE 8050 5023
+RUN EXPOSE 8050 5023
 
 ENTRYPOINT [ \
     "python3", \
